@@ -10,16 +10,15 @@ $(document).ready(function() {
     console.log(item3);
 
     let groceries = [item1, item2, item3];
-
-    groceries.forEach(function(grocery) {
-      $('.output').append('<ul>' + grocery + '</ul>');
-      console.log(grocery);
-    }) 
+    let alphaList = groceries.sort();
 
 
+    alphaList.forEach(function(alphaList) {
+      $('.output').append('<ul>' + alphaList + '</ul>');
+      
+    });
 
-
-
+ 
 
   });
 });
